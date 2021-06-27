@@ -31,7 +31,7 @@ const fetchPackage = async (pkg) => {
     license: data.license,
     repository: data.repository.git,
     homepage: data.homepage,
-    node_version: data.engines.node,
+    node_version: data?.engines?.node,
     downloads,
   };
 };
